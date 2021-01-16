@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B984CAE9132C5DC7D3DB00E /* Pods_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA082171E54EBCFE3E27A0FB /* Pods_MVVM.framework */; };
+		E2124009259B112400E3FC11 /* ServiceInet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2124008259B112400E3FC11 /* ServiceInet.swift */; };
 		E226E41F2567B508001B41A2 /* UIView+Addsubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226E41E2567B508001B41A2 /* UIView+Addsubviews.swift */; };
 		E29A9C7C2563B559007EEECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9C7B2563B559007EEECA /* AppDelegate.swift */; };
 		E29A9C7E2563B559007EEECA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9C7D2563B559007EEECA /* SceneDelegate.swift */; };
@@ -51,6 +52,7 @@
 /* Begin PBXFileReference section */
 		79E3F0440AF207F38630966D /* Pods-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.release.xcconfig"; path = "Target Support Files/Pods-MVVM/Pods-MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		DA082171E54EBCFE3E27A0FB /* Pods_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2124008259B112400E3FC11 /* ServiceInet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInet.swift; sourceTree = "<group>"; };
 		E226E41E2567B508001B41A2 /* UIView+Addsubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Addsubviews.swift"; sourceTree = "<group>"; };
 		E29A9C782563B558007EEECA /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29A9C7B2563B559007EEECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 		E29A9CF12563B7CE007EEECA /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				E2124008259B112400E3FC11 /* ServiceInet.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -505,6 +508,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E29A9CDA2563B766007EEECA /* AppViewProtocol.swift in Sources */,
+				E2124009259B112400E3FC11 /* ServiceInet.swift in Sources */,
 				E29A9CB92563B650007EEECA /* AppCoordinator.swift in Sources */,
 				E29A9D082563B7D8007EEECA /* Dependencies.swift in Sources */,
 				E29A9CE62563B77D007EEECA /* AppViewModel.swift in Sources */,

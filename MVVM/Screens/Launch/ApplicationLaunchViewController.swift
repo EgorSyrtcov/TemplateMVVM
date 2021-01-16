@@ -20,7 +20,6 @@ final class ApplicationLaunchViewController: UIViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         navigationController?.navigationBar.isHidden = false
-
     }
 }
 

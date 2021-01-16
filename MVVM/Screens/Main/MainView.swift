@@ -20,6 +20,7 @@ final class MainView: AppView {
     
     override func setup() {
         backgroundColor = .green
+        
     }
     
     private func setupLayout() {
