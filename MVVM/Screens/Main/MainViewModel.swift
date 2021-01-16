@@ -14,5 +14,5 @@ protocol MainViewModelDelegate: class {
 
 final class MainViewModel: AppViewModel {
     
-    
+
 }
