@@ -10,6 +10,15 @@
 		7B984CAE9132C5DC7D3DB00E /* Pods_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA082171E54EBCFE3E27A0FB /* Pods_MVVM.framework */; };
 		E2124009259B112400E3FC11 /* ServiceInet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2124008259B112400E3FC11 /* ServiceInet.swift */; };
 		E226E41F2567B508001B41A2 /* UIView+Addsubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E226E41E2567B508001B41A2 /* UIView+Addsubviews.swift */; };
+		E28F5FBC25B37529009769E6 /* SecondCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F5FBB25B37529009769E6 /* SecondCoordinator.swift */; };
+		E28F5FC125B37573009769E6 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F5FC025B37573009769E6 /* SecondViewModel.swift */; };
+		E28F5FC625B375C9009769E6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F5FC525B375C9009769E6 /* SecondViewController.swift */; };
+		E28F5FCB25B37617009769E6 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F5FCA25B37617009769E6 /* SecondView.swift */; };
+		E28F5FD025B37761009769E6 /* Callback.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F5FCF25B37761009769E6 /* Callback.swift */; };
+		E28F5FD625B37CB7009769E6 /* ThirdCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F5FD525B37CB7009769E6 /* ThirdCoordinator.swift */; };
+		E28F5FDB25B37DD0009769E6 /* ThirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F5FDA25B37DD0009769E6 /* ThirdViewModel.swift */; };
+		E28F5FE025B37E45009769E6 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F5FDF25B37E45009769E6 /* ThirdViewController.swift */; };
+		E28F5FE525B37E8C009769E6 /* ThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F5FE425B37E8C009769E6 /* ThirdView.swift */; };
 		E29A9C7C2563B559007EEECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9C7B2563B559007EEECA /* AppDelegate.swift */; };
 		E29A9C7E2563B559007EEECA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9C7D2563B559007EEECA /* SceneDelegate.swift */; };
 		E29A9C852563B559007EEECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E29A9C842563B559007EEECA /* Assets.xcassets */; };
@@ -54,6 +63,15 @@
 		DA082171E54EBCFE3E27A0FB /* Pods_MVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2124008259B112400E3FC11 /* ServiceInet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInet.swift; sourceTree = "<group>"; };
 		E226E41E2567B508001B41A2 /* UIView+Addsubviews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Addsubviews.swift"; sourceTree = "<group>"; };
+		E28F5FBB25B37529009769E6 /* SecondCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCoordinator.swift; sourceTree = "<group>"; };
+		E28F5FC025B37573009769E6 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
+		E28F5FC525B375C9009769E6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E28F5FCA25B37617009769E6 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		E28F5FCF25B37761009769E6 /* Callback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Callback.swift; sourceTree = "<group>"; };
+		E28F5FD525B37CB7009769E6 /* ThirdCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCoordinator.swift; sourceTree = "<group>"; };
+		E28F5FDA25B37DD0009769E6 /* ThirdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewModel.swift; sourceTree = "<group>"; };
+		E28F5FDF25B37E45009769E6 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		E28F5FE425B37E8C009769E6 /* ThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdView.swift; sourceTree = "<group>"; };
 		E29A9C782563B558007EEECA /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E29A9C7B2563B559007EEECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E29A9C7D2563B559007EEECA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,8 +137,31 @@
 			isa = PBXGroup;
 			children = (
 				E226E41E2567B508001B41A2 /* UIView+Addsubviews.swift */,
+				E28F5FCF25B37761009769E6 /* Callback.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		E28F5FBA25B374F9009769E6 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				E28F5FBB25B37529009769E6 /* SecondCoordinator.swift */,
+				E28F5FC025B37573009769E6 /* SecondViewModel.swift */,
+				E28F5FC525B375C9009769E6 /* SecondViewController.swift */,
+				E28F5FCA25B37617009769E6 /* SecondView.swift */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		E28F5FD425B37C81009769E6 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				E28F5FD525B37CB7009769E6 /* ThirdCoordinator.swift */,
+				E28F5FDA25B37DD0009769E6 /* ThirdViewModel.swift */,
+				E28F5FDF25B37E45009769E6 /* ThirdViewController.swift */,
+				E28F5FE425B37E8C009769E6 /* ThirdView.swift */,
+			);
+			path = Third;
 			sourceTree = "<group>";
 		};
 		E29A9C6F2563B558007EEECA = {
@@ -216,6 +257,8 @@
 			isa = PBXGroup;
 			children = (
 				E29A9CC92563B721007EEECA /* Main */,
+				E28F5FBA25B374F9009769E6 /* Second */,
+				E28F5FD425B37C81009769E6 /* Third */,
 				E29A9CC02563B6BC007EEECA /* Launch */,
 			);
 			path = Screens;
@@ -510,20 +553,29 @@
 				E29A9CDA2563B766007EEECA /* AppViewProtocol.swift in Sources */,
 				E2124009259B112400E3FC11 /* ServiceInet.swift in Sources */,
 				E29A9CB92563B650007EEECA /* AppCoordinator.swift in Sources */,
+				E28F5FDB25B37DD0009769E6 /* ThirdViewModel.swift in Sources */,
 				E29A9D082563B7D8007EEECA /* Dependencies.swift in Sources */,
 				E29A9CE62563B77D007EEECA /* AppViewModel.swift in Sources */,
 				E29A9D362563BB1B007EEECA /* MainView.swift in Sources */,
 				E29A9CD82563B766007EEECA /* AppView.swift in Sources */,
 				E29A9CCE2563B756007EEECA /* ModalCoordinator.swift in Sources */,
 				E29A9C7C2563B559007EEECA /* AppDelegate.swift in Sources */,
+				E28F5FE025B37E45009769E6 /* ThirdViewController.swift in Sources */,
 				E29A9D2C2563BB10007EEECA /* MainViewModel.swift in Sources */,
+				E28F5FC625B375C9009769E6 /* SecondViewController.swift in Sources */,
 				E29A9CE02563B775007EEECA /* AppViewController.swift in Sources */,
+				E28F5FBC25B37529009769E6 /* SecondCoordinator.swift in Sources */,
 				E29A9D272563BB0A007EEECA /* MainCoordinator.swift in Sources */,
 				E29A9C7E2563B559007EEECA /* SceneDelegate.swift in Sources */,
 				E29A9CC22563B6E3007EEECA /* ApplicationLaunchViewController.swift in Sources */,
 				E29A9CEC2563B7C6007EEECA /* Router.swift in Sources */,
 				E29A9CD92563B766007EEECA /* AppSubView.swift in Sources */,
+				E28F5FCB25B37617009769E6 /* SecondView.swift in Sources */,
 				E29A9D312563BB16007EEECA /* MainViewController.swift in Sources */,
+				E28F5FD025B37761009769E6 /* Callback.swift in Sources */,
+				E28F5FE525B37E8C009769E6 /* ThirdView.swift in Sources */,
+				E28F5FC125B37573009769E6 /* SecondViewModel.swift in Sources */,
+				E28F5FD625B37CB7009769E6 /* ThirdCoordinator.swift in Sources */,
 				E29A9CD02563B756007EEECA /* Coordinable.swift in Sources */,
 				E29A9CCF2563B756007EEECA /* NavigationCoordinator.swift in Sources */,
 				E226E41F2567B508001B41A2 /* UIView+Addsubviews.swift in Sources */,

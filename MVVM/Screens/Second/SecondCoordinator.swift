@@ -1,29 +1,28 @@
 //
-//  MainCoordinator.swift
-//  ImagicPresets
+//  SecondCoordinator.swift
+//  MVVM
 //
-//  Created by Egor Syrtcov on 10/18/20.
-//  Copyright © 2020 Egor Syrtcov. All rights reserved.
+//  Created by Egor Syrtcov on 1/16/21.
 //
 
 import UIKit
 
-final class MainCoordinator: NavigationCoordinator {
+final class SecondCoordinator: NavigationCoordinator {
     
     private let navigationController: UINavigationController
-    private let viewModel: MainViewModel
+    private let viewModel: SecondViewModel
+    private var viewController = SecondViewController()
     
     let dependencies: Dependencies
     
     override init(nav: UINavigationController, dependencies: Dependencies) {
-        viewModel = MainViewModel()
+        viewModel = SecondViewModel()
         self.navigationController = nav
         self.dependencies = dependencies
         super.init(nav: nav, dependencies: dependencies)
     }
     
     override func start() {
-        let viewController = MainViewController()
         viewController.viewModel = viewModel
         navigationController.pushViewController(viewController, animated: false)
     }
@@ -33,8 +32,8 @@ final class MainCoordinator: NavigationCoordinator {
     }
 }
 
-extension MainCoordinator: MainViewModelDelegate {
-    func dismiss() {
-        self.dependencies.router.showSecondScreen(from: navigationController)
+extension SecondCoordinator: SecondViewModelDelegate {
+    func next() {
+        dependencies.router.showThirdScreen(from: viewController)
     }
 }

@@ -1,22 +1,21 @@
 //
-//  MainView.swift
-//  ImagicPresets
+//  SecondView.swift
+//  MVVM
 //
-//  Created by Egor Syrtcov on 10/18/20.
-//  Copyright © 2020 Egor Syrtcov. All rights reserved.
+//  Created by Egor Syrtcov on 1/16/21.
 //
 
 import UIKit
 import SnapKit
 
-final class MainView: AppView {
+final class SecondView: AppView {
     
     var completionClose: Callback?
     
     private lazy var nextButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .white
-        button.setTitle("Next", for: .normal)
+        button.setTitle("Next third VC", for: .normal)
         button.addTarget(self, action: #selector(handleNextButtonTapped), for: .touchUpInside)
         return button
     }()
@@ -29,23 +28,23 @@ final class MainView: AppView {
     }
     
     override func setup() {
-        backgroundColor = .green
-        addSubview(nextButton)
+        backgroundColor = .yellow
+        
     }
     
     private func setupLayout() {
+        addSubview(nextButton)
+    }
+    
+    private func interactions() {
         nextButton.snp.makeConstraints { make in
             make.size.equalTo(CGSize(width: 100, height: 50))
             make.center.equalToSuperview()
         }
     }
-    
-    private func interactions() {
-       
-    }
 }
 
-extension MainView {
+extension SecondView {
     
     @objc func handleNextButtonTapped() {
         completionClose?()

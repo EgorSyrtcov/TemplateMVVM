@@ -25,6 +25,18 @@ extension Router {
         coordinators.append(mainCoordinator)
         mainCoordinator.start()
     }
+    
+    func showSecondScreen(from navigationController: UINavigationController) {
+        let secondCoordinator = SecondCoordinator(nav: navigationController, dependencies: dependencies)
+        coordinators.append(secondCoordinator)
+        secondCoordinator.start()
+    }
+    
+    func showThirdScreen(from viewController: UIViewController) {
+        let thirdCoordinator = ThirdCoordinator(vc: viewController, dependencies: dependencies)
+        coordinators.append(thirdCoordinator)
+        thirdCoordinator.start()
+    }
 }
 
 extension Router {

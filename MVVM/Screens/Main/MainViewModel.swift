@@ -9,10 +9,14 @@
 import UIKit
 
 protocol MainViewModelDelegate: class {
-    
+    func dismiss()
 }
 
 final class MainViewModel: AppViewModel {
     
-
+    weak var delegate: MainViewModelDelegate?
+    
+    func dismiss() {
+        delegate?.dismiss()
+    }
 }

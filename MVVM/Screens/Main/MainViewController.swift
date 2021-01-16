@@ -17,7 +17,11 @@ final class MainViewController: AppViewController<MainView, MainViewModel> {
     }
     
     override func bind() {
+        guard let viewModel = viewModel else { return }
         
+        snpView.completionClose = {
+            viewModel.dismiss()
+        }
     }
 }
 
@@ -25,7 +29,7 @@ extension MainViewController {
     
     private func setupNavBar() {
       
-        navigationItem.title = "Egor"
+        navigationItem.title = "Main"
         navigationItem.setHidesBackButton(true, animated: false)
     }
 }
