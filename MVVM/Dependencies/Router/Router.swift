@@ -20,22 +20,34 @@ final class Router {
 }
 
 extension Router {
-    func showMainScreen(from navigationController: UINavigationController) {
-        let mainCoordinator = MainCoordinator(nav: navigationController, dependencies: dependencies)
-        coordinators.append(mainCoordinator)
-        mainCoordinator.start()
+    func showMainScreen(from parent: Coordinator, completion: (() -> Void)? = nil) {
+      let coordinator = MainCoordinator(
+        parent: parent,
+        dependencies: dependencies,
+        transition: .push(animated: false, hidesBottomBarWhenPushed: true)
+      )
+      coordinators.append(coordinator)
+      coordinator.coordinate(completion: completion)
     }
     
-    func showSecondScreen(from navigationController: UINavigationController) {
-        let secondCoordinator = SecondCoordinator(nav: navigationController, dependencies: dependencies)
-        coordinators.append(secondCoordinator)
-        secondCoordinator.start()
+    func showSecondScreen(from parent: Coordinator, completion: (() -> Void)? = nil) {
+      let coordinator = SecondCoordinator(
+        parent: parent,
+        dependencies: dependencies,
+        transition: .push(animated: true, hidesBottomBarWhenPushed: true)
+      )
+      coordinators.append(coordinator)
+      coordinator.coordinate(completion: completion)
     }
     
-    func showThirdScreen(from viewController: UIViewController) {
-        let thirdCoordinator = ThirdCoordinator(vc: viewController, dependencies: dependencies)
-        coordinators.append(thirdCoordinator)
-        thirdCoordinator.start()
+    func showThirdScreen(from parent: Coordinator, completion: (() -> Void)? = nil) {
+      let coordinator = ThirdCoordinator(
+        parent: parent,
+        dependencies: dependencies,
+        transition: .modal(animated: true, style: .overFullScreen)
+      )
+      coordinators.append(coordinator)
+      coordinator.coordinate(completion: completion)
     }
 }
 

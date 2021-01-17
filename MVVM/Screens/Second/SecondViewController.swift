@@ -9,6 +9,11 @@ import UIKit
 
 final class SecondViewController: AppViewController<SecondView, SecondViewModel> {
     
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    viewModel?.close()
+  }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         

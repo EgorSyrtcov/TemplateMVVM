@@ -9,6 +9,7 @@ import UIKit
 
 protocol SecondViewModelDelegate: class {
     func next()
+    func close()
 }
 
 final class SecondViewModel: AppViewModel {
@@ -18,5 +19,9 @@ final class SecondViewModel: AppViewModel {
     func next() {
         delegate?.next()
     }
+  
+  func close() {
+      delegate?.close()
+  }
 
 }

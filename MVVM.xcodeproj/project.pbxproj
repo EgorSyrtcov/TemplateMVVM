@@ -39,6 +39,7 @@
 		E29A9D2C2563BB10007EEECA /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9D2B2563BB10007EEECA /* MainViewModel.swift */; };
 		E29A9D312563BB16007EEECA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9D302563BB16007EEECA /* MainViewController.swift */; };
 		E29A9D362563BB1B007EEECA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29A9D352563BB1B007EEECA /* MainView.swift */; };
+		E2A132A025B44C62000073C4 /* UINavigationController+Pushable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A1329F25B44C62000073C4 /* UINavigationController+Pushable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		E29A9D2B2563BB10007EEECA /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		E29A9D302563BB16007EEECA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		E29A9D352563BB1B007EEECA /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E2A1329F25B44C62000073C4 /* UINavigationController+Pushable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UINavigationController+Pushable.swift"; path = "../../../../../Downloads/Telegram Desktop/TemplateMVVM_v2/MVVM/Extensions/UIKit/UINavigationController+Pushable.swift"; sourceTree = "<group>"; };
 		E332EB4EDFAD39B092A538D3 /* Pods-MVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.debug.xcconfig"; path = "Target Support Files/Pods-MVVM/Pods-MVVM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 		E226E41D2567B4FA001B41A2 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				E2A1329F25B44C62000073C4 /* UINavigationController+Pushable.swift */,
 				E226E41E2567B508001B41A2 /* UIView+Addsubviews.swift */,
 				E28F5FCF25B37761009769E6 /* Callback.swift */,
 			);
@@ -565,6 +568,7 @@
 				E28F5FC625B375C9009769E6 /* SecondViewController.swift in Sources */,
 				E29A9CE02563B775007EEECA /* AppViewController.swift in Sources */,
 				E28F5FBC25B37529009769E6 /* SecondCoordinator.swift in Sources */,
+				E2A132A025B44C62000073C4 /* UINavigationController+Pushable.swift in Sources */,
 				E29A9D272563BB0A007EEECA /* MainCoordinator.swift in Sources */,
 				E29A9C7E2563B559007EEECA /* SceneDelegate.swift in Sources */,
 				E29A9CC22563B6E3007EEECA /* ApplicationLaunchViewController.swift in Sources */,

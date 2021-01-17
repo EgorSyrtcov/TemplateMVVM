@@ -9,23 +9,18 @@ import UIKit
 
 final class SecondCoordinator: NavigationCoordinator {
     
-    private let navigationController: UINavigationController
     private let viewModel: SecondViewModel
-    private var viewController = SecondViewController()
     
-    let dependencies: Dependencies
+  override init(parent: Coordinator? = nil, dependencies: Dependencies, transition: Transition) {
+    viewModel = SecondViewModel()
+    super.init(parent: parent, dependencies: dependencies, transition: transition)
+  }
     
-    override init(nav: UINavigationController, dependencies: Dependencies) {
-        viewModel = SecondViewModel()
-        self.navigationController = nav
-        self.dependencies = dependencies
-        super.init(nav: nav, dependencies: dependencies)
-    }
-    
-    override func start() {
-        viewController.viewModel = viewModel
-        navigationController.pushViewController(viewController, animated: false)
-    }
+  override func createViewController() -> UIViewController {
+    let viewController = SecondViewController()
+    viewController.viewModel = viewModel
+    return viewController
+  }
     
     override func interactions() {
         viewModel.delegate = self
@@ -34,6 +29,10 @@ final class SecondCoordinator: NavigationCoordinator {
 
 extension SecondCoordinator: SecondViewModelDelegate {
     func next() {
-        dependencies.router.showThirdScreen(from: viewController)
+        dependencies.router.showThirdScreen(from: self)
     }
+  
+  func close() {
+    dependencies.router.uncoordinate(from: self)
+  }
 }
