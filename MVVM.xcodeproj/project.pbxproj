@@ -195,8 +195,8 @@
 				E29A9CB02563B5A4007EEECA /* Dependencies */,
 				E29A9D072563B7D8007EEECA /* Dependencies.swift */,
 				E29A9CB12563B5B5007EEECA /* Extensions */,
-				E29BBA96261D9899002C96D4 /* Models */,
 				E29A9CB32563B5C9007EEECA /* Resourses */,
+				E29BBA9C261D9BEE002C96D4 /* Models */,
 				E29A9CB42563B5D9007EEECA /* Screens */,
 			);
 			path = MVVM;
@@ -364,7 +364,7 @@
 			path = Private;
 			sourceTree = "<group>";
 		};
-		E29BBA96261D9899002C96D4 /* Models */ = {
+		E29BBA9C261D9BEE002C96D4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
