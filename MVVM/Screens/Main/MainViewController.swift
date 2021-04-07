@@ -28,7 +28,7 @@ final class MainViewController: AppViewController<MainView, MainViewModel> {
 extension MainViewController {
     
     private func setupNavBar() {
-      
+        
         navigationItem.title = "Main"
         navigationItem.setHidesBackButton(true, animated: false)
     }

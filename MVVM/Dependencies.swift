@@ -15,5 +15,4 @@ final class Dependencies {
     }
     
     private lazy var _router = Router(dependencies: self)
-    
 }
